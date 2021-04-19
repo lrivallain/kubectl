@@ -2,7 +2,7 @@ FROM alpine:latest
 
 # Pre-requisites + envsubst(via gettext)
 RUN apk --update upgrade && \
-    apk add ca-certificates gettext curl && \
+    apk add bash ca-certificates gettext curl && \
     rm -rf /var/cache/apk/* 
 
 # Latest stable version
